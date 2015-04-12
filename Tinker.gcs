@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="US-ASCII" ?>
 <character unique_id="i8dn93pr:-11wl2cmheh9f4" version="2">
 	<created_date>Apr 11, 2015</created_date>
-	<modified_date>Apr 12, 2015 3:07 PM</modified_date>
+	<modified_date>Apr 12, 2015 3:13 PM</modified_date>
 	<profile>
 		<player_name>Jenn</player_name>
 		<campaign>Fallout</campaign>
@@ -1935,7 +1935,7 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 					<category>Camping and Survival Gear</category>
 				</categories>
 			</equipment>
-			<equipment version="3" state="equipped">
+			<equipment version="3" state="not carried">
 				<quantity>1</quantity>
 				<description>Metal Detector Wand</description>
 				<tech_level>7</tech_level>
