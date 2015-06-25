@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="US-ASCII" ?>
+<character unique_id="i8dn93pr:-11wl2cmheh9f4" version="2">
+	<created_date>Apr 11, 2015</created_date>
+	<modified_date>Jun 24, 2015 9:35 PM</modified_date>
+	<profile>
+		<player_name>Jenn</player_name>
+		<campaign>Fallout</campaign>
+		<name>Tinker's Cart</name>
+		<age>33</age>
+		<birthday>January 23</birthday>
+		<eyes>Brown</eyes>
+		<hair>Blad</hair>
+		<skin>Tanned</skin>
+		<handedness>Right</handedness>
+		<height>5' 11"</height>
+		<weight>170 lb</weight>
+		<SM>0</SM>
+		<gender>Male</gender>
+		<race>Human</race>
+		<tech_level>8</tech_level>
+	</profile>
+	<HP>0</HP>
+	<FP>0</FP>
+	<total_points>120</total_points>
+	<ST>13</ST>
+	<DX>11</DX>
+	<IQ>11</IQ>
+	<HT>12</HT>
+	<will>0</will>
+	<perception>0</perception>
+	<speed>0</speed>
+	<move>0</move>
+	<include_punch>true</include_punch>
+	<include_kick>true</include_kick>
+	<include_kick_with_boots>true</include_kick_with_boots>
+	<equipment_list>
+		<equipment version="3" state="not carried">
+			<quantity>2</quantity>
+			<description>Mules: Sal and Trudge</description>
+			<tech_level>6</tech_level>
+			<legality_class>4</legality_class>
+			<value>2000</value>
+			<reference>B460</reference>
+			<categories>
+				<category>Animal</category>
+			</categories>
+		</equipment>
+		<equipment_container version="3" open="yes" state="equipped">
+			<description>Ammo</description>
+			<legality_class>4</legality_class>
+			<value>0</value>
+			<equipment version="3" state="equipped">
+				<quantity>42</quantity>
+				<description>12-gauge 2.75" (18.5x70mmR) Shot</description>
+				<legality_class>4</legality_class>
+				<value>0.5</value>
+				<weight>0.11 lb</weight>
+				<reference>HT176</reference>
+				<notes>Light cased. Shotshell.</notes>
+				<categories>
+					<category>Ammunition and Warheads</category>
+				</categories>
+			</equipment>
+			<equipment version="3" state="equipped">
+				<quantity>13</quantity>
+				<description>12-gauge 2.75" (18.5x70mmR) Slugs</description>
+				<legality_class>4</legality_class>
+				<value>0.5</value>
+				<weight>0.11 lb</weight>
+				<reference>HT176</reference>
+				<notes>Rifled slugs</notes>
+				<categories>
+					<category>Ammunition and Warheads</category>
+				</categories>
+			</equipment>
+			<equipment version="3" state="equipped">
+				<quantity>409</quantity>
+				<description>9x19mm Parabellum</description>
+				<legality_class>4</legality_class>
+				<value>0.3</value>
+				<weight>0.026 lb</weight>
+				<reference>HT176</reference>
+				<categories>
+					<category>Ammunition and Warheads</category>
+				</categories>
+			</equipment>
+		</equipment_container>
+		<equipment_container version="3" open="yes" state="not carried">
+			<description>Wagon</description>
+			<tech_level>3</tech_level>
+			<legality_class>4</legality_class>
+			<value>680</value>
+			<reference>B464</reference>
+			<categories>
+				<category>Vehicle</category>
+			</categories>
+			<prereq_list all="yes">
+				<contained_weight_prereq has="yes" compare="at most">1000 lb</contained_weight_prereq>
+			</prereq_list>
+			<equipment version="3" state="equipped">
+				<quantity>1</quantity>
+				<description>Machine Pistol, 9mm</description>
+				<tech_level>7</tech_level>
+				<legality_class>2</legality_class>
+				<value>900</value>
+				<weight>5.5 lb</weight>
+				<reference>B278</reference>
+				<ranged_weapon>
+					<damage>2d+2 pi</damage>
+					<strength>12</strength>
+					<accuracy>2</accuracy>
+					<range>160/1900</range>
+					<rate_of_fire>20</rate_of_fire>
+					<shots>25+1(3)</shots>
+					<bulk>-3</bulk>
+					<recoil>3</recoil>
+					<default>
+						<type>DX</type>
+						<modifier>-4</modifier>
+					</default>
+					<default>
+						<type>Skill</type>
+						<name>Guns</name>
+						<specialization>Pistol</specialization>
+						<modifier>-2</modifier>
+					</default>
+					<default>
+						<type>Skill</type>
+						<name>Guns</name>
+						<specialization>Rifle</specialization>
+						<modifier>-2</modifier>
+					</default>
+					<default>
+						<type>Skill</type>
+						<name>Guns</name>
+						<specialization>Shotgun</specialization>
+						<modifier>-2</modifier>
+					</default>
+					<default>
+						<type>Skill</type>
+						<name>Guns</name>
+						<specialization>Light Machine Gun</specialization>
+						<modifier>-2</modifier>
+					</default>
+					<default>
+						<type>Skill</type>
+						<name>Guns</name>
+						<specialization>Submachine Gun</specialization>
+						<modifier>0</modifier>
+					</default>
+					<default>
+						<type>Skill</type>
+						<name>Guns</name>
+						<specialization>Musket</specialization>
+						<modifier>-2</modifier>
+					</default>
+					<default>
+						<type>Skill</type>
+						<name>Guns</name>
+						<specialization>Grenade Launcher</specialization>
+						<modifier>-4</modifier>
+					</default>
+					<default>
+						<type>Skill</type>
+						<name>Guns</name>
+						<specialization>Gyroc</specialization>
+						<modifier>-4</modifier>
+					</default>
+					<default>
+						<type>Skill</type>
+						<name>Guns</name>
+						<specialization>Light Anti-Armor Weapon</specialization>
+						<modifier>-4</modifier>
+					</default>
+					<default>
+						<type>Skill</type>
+						<name>Gun!</name>
+						<modifier>0</modifier>
+					</default>
+				</ranged_weapon>
+				<categories>
+					<category>Missile Weapon</category>
+				</categories>
+			</equipment>
+			<equipment version="3" state="equipped">
+				<quantity>1</quantity>
+				<description>Folding Ladder</description>
+				<tech_level>8</tech_level>
+				<legality_class>4</legality_class>
+				<value>300</value>
+				<weight>20 lb</weight>
+				<reference>HT30</reference>
+				<categories>
+					<category>General Equipment</category>
+				</categories>
+			</equipment>
+			<equipment version="3" state="equipped">
+				<quantity>1</quantity>
+				<description>Hatchet</description>
+				<tech_level>0</tech_level>
+				<legality_class>4</legality_class>
+				<value>40</value>
+				<weight>2 lb</weight>
+				<reference>B271</reference>
+				<melee_weapon>
+					<damage>sw cut</damage>
+					<strength>8</strength>
+					<usage>Swung</usage>
+					<reach>1</reach>
+					<parry>0</parry>
+					<block>No</block>
+					<default>
+						<type>DX</type>
+						<modifier>-5</modifier>
+					</default>
+					<default>
+						<type>Skill</type>
+						<name>Axe/Mace</name>
+						<modifier>0</modifier>
+					</default>
+					<default>
+						<type>Skill</type>
+						<name>Flail</name>
+						<modifier>-4</modifier>
+					</default>
+					<default>
+						<type>Skill</type>
+						<name>Two-Handed Axe/Mace</name>
+						<modifier>-3</modifier>
+					</default>
+				</melee_weapon>
+				<ranged_weapon>
+					<damage>sw cut</damage>
+					<strength>8</strength>
+					<usage>Thrown</usage>
+					<accuracy>1</accuracy>
+					<range>x1.5/x2.5</range>
+					<rate_of_fire>1</rate_of_fire>
+					<shots>T(1)</shots>
+					<bulk>-2</bulk>
+					<default>
+						<type>DX</type>
+						<modifier>-4</modifier>
+					</default>
+					<default>
+						<type>Skill</type>
+						<name>Thrown Weapon</name>
+						<specialization>Axe/Mace</specialization>
+						<modifier>0</modifier>
+					</default>
+				</ranged_weapon>
+				<categories>
+					<category>Melee Weapon</category>
+					<category>Missile Weapon</category>
+				</categories>
+			</equipment>
+			<equipment_container version="3" open="yes" state="equipped">
+				<description>Medium Computer</description>
+				<tech_level>8</tech_level>
+				<legality_class>4</legality_class>
+				<value>1000</value>
+				<weight>4 lb</weight>
+				<reference>HT20</reference>
+				<notes>Complexity 3. Stores 100 GB. M/2.5hrs.</notes>
+				<categories>
+					<category>Information Technology</category>
+				</categories>
+			</equipment_container>
+			<equipment_container version="3" open="yes" state="not carried">
+				<description>First Aid Kit</description>
+				<tech_level>7</tech_level>
+				<legality_class>4</legality_class>
+				<value>50</value>
+				<weight>2 lb</weight>
+				<reference>HT221</reference>
+				<categories>
+					<category>Emergency Equipment</category>
+				</categories>
+				<skill_bonus>
+					<name compare="is">First Aid</name>
+					<specialization compare="is anything"></specialization>
+					<amount>1</amount>
+				</skill_bonus>
+			</equipment_container>
+			<equipment_container version="3" open="yes" state="equipped">
+				<description>55-Gallon Drum, Chemicals</description>
+				<tech_level>6</tech_level>
+				<legality_class>4</legality_class>
+				<value>50</value>
+				<weight>55 lb</weight>
+				<reference>HT54</reference>
+				<notes>DR 3.</notes>
+				<categories>
+					<category>General Equipment</category>
+				</categories>
+			</equipment_container>
+			<equipment_container version="3" open="yes" state="equipped">
+				<description>55-Gallon Drum, Chemicals</description>
+				<tech_level>6</tech_level>
+				<legality_class>4</legality_class>
+				<value>50</value>
+				<weight>55 lb</weight>
+				<reference>HT54</reference>
+				<notes>DR 3.</notes>
+				<categories>
+					<category>General Equipment</category>
+				</categories>
+			</equipment_container>
+			<equipment_container version="3" open="yes" state="not carried">
+				<description>55-Gallon Drum, Water</description>
+				<tech_level>6</tech_level>
+				<legality_class>4</legality_class>
+				<value>50</value>
+				<weight>55 lb</weight>
+				<reference>HT54</reference>
+				<notes>DR 3.</notes>
+				<categories>
+					<category>General Equipment</category>
+				</categories>
+			</equipment_container>
+			<equipment version="3" state="not carried">
+				<quantity>1</quantity>
+				<description>Biohazard Suit</description>
+				<tech_level>7</tech_level>
+				<legality_class>4</legality_class>
+				<value>500</value>
+				<weight>8 lb</weight>
+				<reference>HT75</reference>
+				<notes>Flexible.</notes>
+				<categories>
+					<category>Defenses</category>
+				</categories>
+				<dr_bonus>
+					<location>neck</location>
+					<amount>1</amount>
+				</dr_bonus>
+				<dr_bonus>
+					<location>torso</location>
+					<amount>1</amount>
+				</dr_bonus>
+				<dr_bonus>
+					<location>groin</location>
+					<amount>1</amount>
+				</dr_bonus>
+				<dr_bonus>
+					<location>arms</location>
+					<amount>1</amount>
+				</dr_bonus>
+				<dr_bonus>
+					<location>hands</location>
+					<amount>1</amount>
+				</dr_bonus>
+				<dr_bonus>
+					<location>legs</location>
+					<amount>1</amount>
+				</dr_bonus>
+				<dr_bonus>
+					<location>feet</location>
+					<amount>1</amount>
+				</dr_bonus>
+			</equipment>
+			<equipment version="3" state="equipped">
+				<quantity>1</quantity>
+				<description>Rope, 3/4", 20 yards</description>
+				<tech_level>1</tech_level>
+				<legality_class>4</legality_class>
+				<value>50</value>
+				<weight>10 lb</weight>
+				<reference>B288</reference>
+				<notes>Supports 1,100 lbs.</notes>
+				<categories>
+					<category>Camping and Survival Gear</category>
+				</categories>
+			</equipment>
+			<equipment version="3" state="not carried">
+				<quantity>1</quantity>
+				<description>Climbing Gear</description>
+				<tech_level>2</tech_level>
+				<legality_class>4</legality_class>
+				<value>20</value>
+				<weight>4 lb</weight>
+				<reference>B288</reference>
+				<notes>Hammer, spikes, carabiners</notes>
+				<categories>
+					<category>Camping and Survival Gear</category>
+				</categories>
+			</equipment>
+			<equipment version="3" state="not carried">
+				<quantity>1</quantity>
+				<description>Life Jacket</description>
+				<tech_level>6</tech_level>
+				<legality_class>4</legality_class>
+				<value>100</value>
+				<weight>6 lb</weight>
+				<reference>B288</reference>
+				<notes>Floats up to 350 lbs.</notes>
+				<categories>
+					<category>Camping and Survival Gear</category>
+				</categories>
+			</equipment>
+			<equipment version="3" state="not carried">
+				<quantity>1</quantity>
+				<description>Personal Basics</description>
+				<tech_level>0</tech_level>
+				<legality_class>4</legality_class>
+				<value>5</value>
+				<weight>1 lb</weight>
+				<reference>B288</reference>
+				<notes>Minimum gear for camping: -2 to any Survival roll without it. Includes utensils, tinderbox or flint and steel, towel, etc., as TL permits.</notes>
+				<categories>
+					<category>Camping and Survival Gear</category>
+				</categories>
+			</equipment>
+			<equipment version="3" state="not carried">
+				<quantity>1</quantity>
+				<description>Shovel</description>
+				<tech_level>1</tech_level>
+				<legality_class>4</legality_class>
+				<value>12</value>
+				<weight>6 lb</weight>
+				<reference>B289</reference>
+				<notes>Speeds up digging</notes>
+				<categories>
+					<category>Tools</category>
+				</categories>
+			</equipment>
+			<equipment_container version="3" open="no" state="not carried">
+				<description>Wooden Barrel, Small</description>
+				<tech_level>5</tech_level>
+				<legality_class>4</legality_class>
+				<value>65</value>
+				<weight>20 lb</weight>
+				<reference>HT53</reference>
+				<notes>Holds 5gal. DR 1.</notes>
+				<categories>
+					<category>General Equipment</category>
+				</categories>
+			</equipment_container>
+		</equipment_container>
+	</equipment_list>
+	<print_settings printer="Brother HL-2270DW series" units="in">
+		<orientation>portrait</orientation>
+		<width>8.5</width>
+		<height>11</height>
+		<top_margin>0.5</top_margin>
+		<left_margin>0.5</left_margin>
+		<bottom_margin>0.5</bottom_margin>
+		<right_margin>0.5</right_margin>
+		<ink_chromaticity>monochrome</ink_chromaticity>
+		<sides>single</sides>
+		<quality>normal</quality>
+	</print_settings>
+</character>

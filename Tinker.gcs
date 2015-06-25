@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="US-ASCII" ?>
 <character unique_id="i8dn93pr:-11wl2cmheh9f4" version="2">
 	<created_date>Apr 11, 2015</created_date>
-	<modified_date>Apr 12, 2015 3:13 PM</modified_date>
+	<modified_date>Jun 24, 2015 10:05 PM</modified_date>
 	<profile>
 		<player_name>Jenn</player_name>
 		<campaign>Fallout</campaign>
@@ -9,7 +9,7 @@
 		<age>33</age>
 		<birthday>January 23</birthday>
 		<eyes>Brown</eyes>
-		<hair>Blad</hair>
+		<hair>Bald</hair>
 		<skin>Tanned</skin>
 		<handedness>Right</handedness>
 		<height>5' 11"</height>
@@ -18,10 +18,11 @@
 		<gender>Male</gender>
 		<race>Human</race>
 		<tech_level>8</tech_level>
-		<notes>Clip for pistol: $12 for 16-bullet clip, .6 lb
-Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
-
-30 clips for pistol, 10 loads for shotgun = $500, 25 lb</notes>
+		<notes>Quip Counter
+11 April 2014: 5
+2 May 2014: 14
+16 May 2014: 25
+30 May 2014: 35</notes>
 	</profile>
 	<HP>0</HP>
 	<FP>0</FP>
@@ -41,7 +42,7 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 		<advantage_container version="2" open="yes">
 			<name>Quirks</name>
 			<advantage version="2">
-				<name>Careful</name>
+				<name>Fatalistic</name>
 				<type>Mental</type>
 				<base_points>-1</base_points>
 				<reference>B163</reference>
@@ -91,7 +92,7 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 				</categories>
 			</advantage>
 			<advantage version="2">
-				<name>Nervous Stomach</name>
+				<name>Worldly-wise</name>
 				<type>Physical</type>
 				<base_points>-1</base_points>
 				<reference>B165</reference>
@@ -102,6 +103,65 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 		</advantage_container>
 		<advantage_container version="2" open="yes">
 			<name>Advantages</name>
+			<advantage version="2">
+				<name>Increased Basic Speed</name>
+				<type>Physical</type>
+				<levels>1</levels>
+				<points_per_level>5</points_per_level>
+				<reference>B17</reference>
+				<notes>-</notes>
+				<categories>
+					<category>Advantage</category>
+					<category>Attribute</category>
+				</categories>
+				<attribute_bonus>
+					<attribute>speed</attribute>
+					<amount per_level="yes">0.25</amount>
+				</attribute_bonus>
+			</advantage>
+			<advantage version="2">
+				<name>Increased Perception</name>
+				<type>Mental/Physical</type>
+				<levels>0</levels>
+				<points_per_level>5</points_per_level>
+				<reference>B16</reference>
+				<notes>1 full pt</notes>
+				<categories>
+					<category>Advantage</category>
+					<category>Attribute</category>
+				</categories>
+				<attribute_bonus>
+					<attribute>perception</attribute>
+					<amount per_level="yes">1</amount>
+				</attribute_bonus>
+			</advantage>
+			<advantage version="2">
+				<name>Extra Hit Points</name>
+				<type>Physical</type>
+				<levels>0</levels>
+				<points_per_level>2</points_per_level>
+				<modifier version="1" enabled="no">
+					<name>Size</name>
+					<cost type="percentage">-10</cost>
+					<levels>1</levels>
+					<affects>total</affects>
+				</modifier>
+				<modifier version="1" enabled="no">
+					<name>No Fine Manipulators</name>
+					<cost type="percentage">-40</cost>
+					<affects>total</affects>
+				</modifier>
+				<reference>B16</reference>
+				<notes>O</notes>
+				<categories>
+					<category>Advantage</category>
+					<category>Attribute</category>
+				</categories>
+				<attribute_bonus>
+					<attribute>hp</attribute>
+					<amount per_level="yes">1</amount>
+				</attribute_bonus>
+			</advantage>
 			<advantage version="2">
 				<name>Claim to Hospitality</name>
 				<type>Social</type>
@@ -258,6 +318,7 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 				<type>Physical</type>
 				<base_points>15</base_points>
 				<reference>B79</reference>
+				<notes>When you roll to recover HP or for cripple, +5. Also, Successful HT heals 2 HP, not 1 HP.</notes>
 				<categories>
 					<category>Advantage</category>
 				</categories>
@@ -431,11 +492,26 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 	</advantage_list>
 	<skill_list>
 		<skill version="2">
+			<name>Acrobatics</name>
+			<difficulty>DX/H</difficulty>
+			<points>1</points>
+			<reference>B174</reference>
+			<notes>-</notes>
+			<categories>
+				<category>Athletic</category>
+			</categories>
+			<default>
+				<type>DX</type>
+				<modifier>-6</modifier>
+			</default>
+		</skill>
+		<skill version="2">
 			<name>Animal Handling</name>
 			<specialization>Equines</specialization>
 			<difficulty>IQ/A</difficulty>
 			<points>1</points>
 			<reference>B175</reference>
+			<notes>-</notes>
 			<categories>
 				<category>Animal</category>
 			</categories>
@@ -479,6 +555,28 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 			</default>
 		</skill>
 		<skill version="2">
+			<name>Area Knowledge</name>
+			<specialization>Red Dome</specialization>
+			<difficulty>IQ/E</difficulty>
+			<points>0</points>
+			<reference>B176</reference>
+			<notes>-</notes>
+			<categories>
+				<category>Everyman</category>
+				<category>Knowledge</category>
+			</categories>
+			<default>
+				<type>IQ</type>
+				<modifier>-4</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Geography</name>
+				<specialization>Red Dome</specialization>
+				<modifier>-3</modifier>
+			</default>
+		</skill>
+		<skill version="2">
 			<name>Armoury</name>
 			<specialization>Body Armor</specialization>
 			<tech_level>8</tech_level>
@@ -507,6 +605,7 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 			<difficulty>IQ/A</difficulty>
 			<points>1</points>
 			<reference>B178</reference>
+			<notes>O</notes>
 			<categories>
 				<category>Military</category>
 				<category>Repair/Maintainance</category>
@@ -528,6 +627,7 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 			<difficulty>IQ/H</difficulty>
 			<points>1</points>
 			<reference>B179</reference>
+			<notes>+</notes>
 			<categories>
 				<category>Arts/Entertainment</category>
 			</categories>
@@ -581,6 +681,7 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 			<difficulty>IQ/E</difficulty>
 			<points>1</points>
 			<reference>B183</reference>
+			<notes>-</notes>
 			<categories>
 				<category>Military</category>
 				<category>Outdoor/Exploration</category>
@@ -599,8 +700,9 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 			<name>Climbing</name>
 			<encumbrance_penalty_multiplier>1</encumbrance_penalty_multiplier>
 			<difficulty>DX/A</difficulty>
-			<points>1</points>
+			<points>0</points>
 			<reference>B183</reference>
+			<notes>Encumbrance. -</notes>
 			<categories>
 				<category>Athletic</category>
 				<category>Criminal/Street</category>
@@ -639,10 +741,39 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 			</default>
 		</skill>
 		<skill version="2">
+			<name>Current Affairs</name>
+			<specialization>People</specialization>
+			<tech_level>8</tech_level>
+			<difficulty>IQ/E</difficulty>
+			<points>0</points>
+			<reference>B186</reference>
+			<notes>-</notes>
+			<categories>
+				<category>Everyman</category>
+				<category>Knowledge</category>
+				<category>Social</category>
+			</categories>
+			<default>
+				<type>IQ</type>
+				<modifier>-4</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Research</name>
+				<modifier>-4</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Current Affairs</name>
+				<modifier>-4</modifier>
+			</default>
+		</skill>
+		<skill version="2">
 			<name>Diplomacy</name>
 			<difficulty>IQ/H</difficulty>
 			<points>2</points>
 			<reference>B187</reference>
+			<notes>-</notes>
 			<categories>
 				<category>Business</category>
 				<category>Police</category>
@@ -664,6 +795,7 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 			<difficulty>DX/E</difficulty>
 			<points>1</points>
 			<reference>B194</reference>
+			<notes>O</notes>
 			<categories>
 				<category>Combat/Weapon</category>
 				<category>Ranged Combat</category>
@@ -675,6 +807,7 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 			<difficulty>DX/E</difficulty>
 			<points>1</points>
 			<reference>B194</reference>
+			<notes>+</notes>
 			<categories>
 				<category>Combat/Weapon</category>
 				<category>Ranged Combat</category>
@@ -706,6 +839,7 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 			<difficulty>IQ/E</difficulty>
 			<points>1</points>
 			<reference>B195</reference>
+			<notes>d-1, 5 min. -</notes>
 			<categories>
 				<category>Everyman</category>
 				<category>Medical</category>
@@ -741,12 +875,29 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 				<category>Spy</category>
 			</categories>
 		</skill>
+		<technique version="2" limit="0">
+			<name>Ground Fighting</name>
+			<difficulty>H</difficulty>
+			<points>0</points>
+			<reference>B231, MA73</reference>
+			<default>
+				<type>Skill</type>
+				<name>Brawling</name>
+				<modifier>-4</modifier>
+			</default>
+			<notes>+</notes>
+			<categories>
+				<category>Combat/Weapon</category>
+				<category>Melee Combat</category>
+				<category>Technique</category>
+			</categories>
+		</technique>
 		<skill version="2">
 			<name>Guns</name>
 			<specialization>Pistol</specialization>
 			<tech_level>8</tech_level>
 			<difficulty>DX/E</difficulty>
-			<points>1</points>
+			<points>2</points>
 			<reference>B198</reference>
 			<categories>
 				<category>Combat/Weapon</category>
@@ -816,7 +967,7 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 			<specialization>Shotgun</specialization>
 			<tech_level>8</tech_level>
 			<difficulty>DX/E</difficulty>
-			<points>1</points>
+			<points>3</points>
 			<reference>B198</reference>
 			<categories>
 				<category>Combat/Weapon</category>
@@ -892,8 +1043,9 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 		<skill version="2">
 			<name>Intimidation</name>
 			<difficulty>Will/A</difficulty>
-			<points>4</points>
+			<points>3</points>
 			<reference>B202</reference>
+			<notes>+</notes>
 			<categories>
 				<category>Criminal/Street</category>
 				<category>Police</category>
@@ -909,6 +1061,23 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 				<modifier>-3</modifier>
 			</default>
 		</skill>
+		<technique version="2" limit="0">
+			<name>Kicking</name>
+			<difficulty>H</difficulty>
+			<points>0</points>
+			<reference>B231, MA75</reference>
+			<default>
+				<type>Skill</type>
+				<name>Brawling</name>
+				<modifier>-2</modifier>
+			</default>
+			<notes>-</notes>
+			<categories>
+				<category>Combat/Weapon</category>
+				<category>Melee Combat</category>
+				<category>Technique</category>
+			</categories>
+		</technique>
 		<skill version="2">
 			<name>Knife</name>
 			<difficulty>DX/E</difficulty>
@@ -939,10 +1108,57 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 			</default>
 		</skill>
 		<skill version="2">
+			<name>Leadership</name>
+			<difficulty>IQ/A</difficulty>
+			<points>0</points>
+			<reference>B204</reference>
+			<notes>-</notes>
+			<categories>
+				<category>Military</category>
+				<category>Social</category>
+			</categories>
+			<default>
+				<type>IQ</type>
+				<modifier>-5</modifier>
+			</default>
+		</skill>
+		<skill version="2">
+			<name>Mechanic</name>
+			<specialization>Wagons</specialization>
+			<tech_level>8</tech_level>
+			<difficulty>IQ/A</difficulty>
+			<points>1</points>
+			<reference>B207</reference>
+			<categories>
+				<category>Repair/Maintainance</category>
+			</categories>
+			<default>
+				<type>IQ</type>
+				<modifier>-5</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Engineer</name>
+				<specialization>Aerospace</specialization>
+				<modifier>-4</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Machinist</name>
+				<modifier>-5</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Mechanic</name>
+				<modifier>-4</modifier>
+			</default>
+		</skill>
+		<skill version="2">
 			<name>Merchant</name>
 			<difficulty>IQ/A</difficulty>
 			<points>4</points>
 			<reference>B209</reference>
+			<notes>O</notes>
 			<categories>
 				<category>Business</category>
 				<category>Social</category>
@@ -985,10 +1201,51 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 			</default>
 		</skill>
 		<skill version="2">
+			<name>Navigation</name>
+			<specialization>Land</specialization>
+			<tech_level>8</tech_level>
+			<difficulty>IQ/A</difficulty>
+			<points>1</points>
+			<reference>B211</reference>
+			<categories>
+				<category>Outdoor/Exploration</category>
+				<category>Technical</category>
+				<category>Vehicle</category>
+			</categories>
+			<default>
+				<type>IQ</type>
+				<modifier>-5</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Cartography</name>
+				<modifier>-4</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Mathematics</name>
+				<specialization>Surveying</specialization>
+				<modifier>-4</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Navigation</name>
+				<specialization>Air</specialization>
+				<modifier>-2</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Navigation</name>
+				<specialization>Sea</specialization>
+				<modifier>-2</modifier>
+			</default>
+		</skill>
+		<skill version="2">
 			<name>Packing</name>
 			<difficulty>IQ/A</difficulty>
 			<points>1</points>
 			<reference>B212</reference>
+			<notes>-</notes>
 			<categories>
 				<category>Animal</category>
 			</categories>
@@ -1004,41 +1261,28 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 			</default>
 		</skill>
 		<skill version="2">
-			<name>Mechanic</name>
-			<specialization>Wagons</specialization>
+			<name>Parachuting</name>
 			<tech_level>8</tech_level>
-			<difficulty>IQ/A</difficulty>
-			<points>1</points>
-			<reference>B207</reference>
+			<difficulty>DX/E</difficulty>
+			<points>0</points>
+			<reference>B212</reference>
+			<notes>O</notes>
 			<categories>
-				<category>Repair/Maintainance</category>
+				<category>Athletic</category>
+				<category>Military</category>
+				<category>Technical</category>
 			</categories>
 			<default>
-				<type>IQ</type>
-				<modifier>-5</modifier>
-			</default>
-			<default>
-				<type>Skill</type>
-				<name>Engineer</name>
-				<specialization>Aerospace</specialization>
-				<modifier>-4</modifier>
-			</default>
-			<default>
-				<type>Skill</type>
-				<name>Machinist</name>
-				<modifier>-5</modifier>
-			</default>
-			<default>
-				<type>Skill</type>
-				<name>Mechanic</name>
+				<type>DX</type>
 				<modifier>-4</modifier>
 			</default>
 		</skill>
 		<skill version="2">
 			<name>Scrounging</name>
 			<difficulty>Per/E</difficulty>
-			<points>4</points>
+			<points>2</points>
 			<reference>B218</reference>
+			<notes>+</notes>
 			<categories>
 				<category>Criminal/Street</category>
 			</categories>
@@ -1067,6 +1311,7 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 			<difficulty>DX/A</difficulty>
 			<points>1</points>
 			<reference>B222</reference>
+			<notes>Encumbrance</notes>
 			<categories>
 				<category>Criminal/Street</category>
 				<category>Police</category>
@@ -1102,6 +1347,7 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 			<difficulty>Per/A</difficulty>
 			<points>2</points>
 			<reference>B223</reference>
+			<notes>O</notes>
 			<categories>
 				<category>Outdoor/Exploration</category>
 			</categories>
@@ -1158,11 +1404,47 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 			</default>
 		</skill>
 		<skill version="2">
+			<name>Tactics</name>
+			<difficulty>IQ/H</difficulty>
+			<points>0</points>
+			<reference>B224</reference>
+			<notes>O</notes>
+			<categories>
+				<category>Military</category>
+				<category>Police</category>
+			</categories>
+			<default>
+				<type>IQ</type>
+				<modifier>-6</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Strategy</name>
+				<modifier>-6</modifier>
+			</default>
+		</skill>
+		<skill version="2">
+			<name>Teaching</name>
+			<difficulty>IQ/A</difficulty>
+			<points>0</points>
+			<reference>B224</reference>
+			<notes>O</notes>
+			<categories>
+				<category>Scholarly</category>
+				<category>Social</category>
+			</categories>
+			<default>
+				<type>IQ</type>
+				<modifier>-5</modifier>
+			</default>
+		</skill>
+		<skill version="2">
 			<name>Teamster</name>
 			<specialization>Equines</specialization>
 			<difficulty>IQ/A</difficulty>
 			<points>1</points>
 			<reference>B225</reference>
+			<notes>-</notes>
 			<categories>
 				<category>Animal</category>
 				<category>Vehicle</category>
@@ -1219,6 +1501,7 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 			<difficulty>Per/A</difficulty>
 			<points>1</points>
 			<reference>B226</reference>
+			<notes>O</notes>
 			<categories>
 				<category>Outdoor/Exploration</category>
 			</categories>
@@ -1235,8 +1518,9 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 		<skill version="2">
 			<name>Two-Handed Axe/Mace</name>
 			<difficulty>DX/A</difficulty>
-			<points>1</points>
+			<points>2</points>
 			<reference>B208</reference>
+			<notes>+</notes>
 			<categories>
 				<category>Combat/Weapon</category>
 				<category>Melee Combat</category>
@@ -1275,21 +1559,72 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 	<equipment_list>
 		<equipment version="3" state="equipped">
 			<quantity>1</quantity>
-			<description>Auto Pistol, 9mm</description>
-			<tech_level>7</tech_level>
+			<description>Sledgehammer</description>
+			<tech_level>0</tech_level>
+			<legality_class>4</legality_class>
+			<value>80</value>
+			<weight>12 lb</weight>
+			<reference>B274</reference>
+			<melee_weapon>
+				<damage>sw+4 cr</damage>
+				<strength>13&#8225;</strength>
+				<usage>Swung</usage>
+				<reach>1,2*</reach>
+				<parry>0U</parry>
+				<block>No</block>
+				<default>
+					<type>DX</type>
+					<modifier>-5</modifier>
+				</default>
+				<default>
+					<type>Skill</type>
+					<name>Two-Handed Axe/Mace</name>
+					<modifier>0</modifier>
+				</default>
+				<default>
+					<type>Skill</type>
+					<name>Axe/Mace</name>
+					<modifier>-3</modifier>
+				</default>
+				<default>
+					<type>Skill</type>
+					<name>Polearm</name>
+					<modifier>-4</modifier>
+				</default>
+				<default>
+					<type>Skill</type>
+					<name>Two-Handed Flail</name>
+					<modifier>-4</modifier>
+				</default>
+			</melee_weapon>
+			<notes>Unready after attack; can't do both in the same turn</notes>
+			<categories>
+				<category>Melee Weapon</category>
+			</categories>
+		</equipment>
+		<equipment version="3" state="equipped">
+			<quantity>1</quantity>
+			<description>Ithaca Model 37 Featherlight, 12G 2.75" Shot</description>
+			<tech_level>6</tech_level>
 			<legality_class>3</legality_class>
-			<value>600</value>
-			<weight>2.6 lb</weight>
-			<reference>B278</reference>
+			<value>450</value>
+			<weight>7 lb</weight>
+			<reference>HT104</reference>
 			<ranged_weapon>
-				<damage>2d+2 pi</damage>
-				<strength>9</strength>
-				<accuracy>2</accuracy>
-				<range>150/1850</range>
-				<rate_of_fire>3</rate_of_fire>
-				<shots>15+1(3)</shots>
-				<bulk>-2</bulk>
-				<recoil>2</recoil>
+				<damage>1d+1 pi</damage>
+				<strength>10&#8224;</strength>
+				<accuracy>3</accuracy>
+				<range>40/800</range>
+				<rate_of_fire>2x9</rate_of_fire>
+				<shots>4+1(2i)</shots>
+				<bulk>-6</bulk>
+				<recoil>1/5</recoil>
+				<default>
+					<type>Skill</type>
+					<name>Guns</name>
+					<specialization>Shotgun</specialization>
+					<modifier>0</modifier>
+				</default>
 				<default>
 					<type>DX</type>
 					<modifier>-4</modifier>
@@ -1298,12 +1633,18 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 					<type>Skill</type>
 					<name>Guns</name>
 					<specialization>Pistol</specialization>
-					<modifier>0</modifier>
+					<modifier>-2</modifier>
 				</default>
 				<default>
 					<type>Skill</type>
 					<name>Guns</name>
 					<specialization>Rifle</specialization>
+					<modifier>-2</modifier>
+				</default>
+				<default>
+					<type>Skill</type>
+					<name>Guns</name>
+					<specialization>Musket</specialization>
 					<modifier>-2</modifier>
 				</default>
 				<default>
@@ -1326,9 +1667,8 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 				</default>
 				<default>
 					<type>Skill</type>
-					<name>Guns</name>
-					<specialization>Musket</specialization>
-					<modifier>-2</modifier>
+					<name>Gun!</name>
+					<modifier>0</modifier>
 				</default>
 				<default>
 					<type>Skill</type>
@@ -1348,30 +1688,127 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 					<specialization>Light Anti-Armor Weapon</specialization>
 					<modifier>-4</modifier>
 				</default>
-				<default>
-					<type>Skill</type>
-					<name>Gun!</name>
-					<modifier>0</modifier>
-				</default>
 			</ranged_weapon>
-			<notes>3 sec reload clip; 15 bullets + 1 in chamber</notes>
 			<categories>
-				<category>Missile Weapon</category>
+				<category>Firearms</category>
 			</categories>
 		</equipment>
-		<equipment version="3" state="equipped">
-			<quantity>1</quantity>
-			<description>Binoculars</description>
-			<tech_level>6</tech_level>
+		<equipment_container version="3" open="yes" state="equipped">
+			<description>Holster, Belt</description>
+			<tech_level>5</tech_level>
 			<legality_class>4</legality_class>
-			<value>400</value>
-			<weight>2 lb</weight>
+			<value>25</value>
+			<weight>0.5 lb</weight>
 			<reference>B289</reference>
-			<notes>Gives (TL-4) levels of Telescopic Vision.</notes>
+			<notes>Fits most pistols</notes>
 			<categories>
-				<category>Optics and Sensors</category>
+				<category>Weapon and Combat Accessories</category>
 			</categories>
-		</equipment>
+			<equipment version="3" state="equipped">
+				<quantity>1</quantity>
+				<description>Beretta Mod 92, 9x19mm</description>
+				<tech_level>7</tech_level>
+				<legality_class>3</legality_class>
+				<value>700</value>
+				<weight>2.8 lb</weight>
+				<reference>HT101</reference>
+				<ranged_weapon>
+					<damage>2d+2 pi</damage>
+					<strength>9</strength>
+					<accuracy>2</accuracy>
+					<range>160/1,800</range>
+					<rate_of_fire>3</rate_of_fire>
+					<shots>15+1(3)</shots>
+					<bulk>-2</bulk>
+					<recoil>2</recoil>
+					<default>
+						<type>Skill</type>
+						<name>Guns</name>
+						<specialization>Pistol</specialization>
+						<modifier>0</modifier>
+					</default>
+					<default>
+						<type>DX</type>
+						<modifier>-4</modifier>
+					</default>
+					<default>
+						<type>Skill</type>
+						<name>Guns</name>
+						<specialization>Pistol</specialization>
+						<modifier>-2</modifier>
+					</default>
+					<default>
+						<type>Skill</type>
+						<name>Guns</name>
+						<specialization>Rifle</specialization>
+						<modifier>-2</modifier>
+					</default>
+					<default>
+						<type>Skill</type>
+						<name>Guns</name>
+						<specialization>Musket</specialization>
+						<modifier>-2</modifier>
+					</default>
+					<default>
+						<type>Skill</type>
+						<name>Guns</name>
+						<specialization>Shotgun</specialization>
+						<modifier>-2</modifier>
+					</default>
+					<default>
+						<type>Skill</type>
+						<name>Guns</name>
+						<specialization>Light Machine Gun</specialization>
+						<modifier>-2</modifier>
+					</default>
+					<default>
+						<type>Skill</type>
+						<name>Guns</name>
+						<specialization>Submachine Gun</specialization>
+						<modifier>-2</modifier>
+					</default>
+					<default>
+						<type>Skill</type>
+						<name>Gun!</name>
+						<modifier>0</modifier>
+					</default>
+					<default>
+						<type>Skill</type>
+						<name>Guns</name>
+						<specialization>Grenade Launcher</specialization>
+						<modifier>-4</modifier>
+					</default>
+					<default>
+						<type>Skill</type>
+						<name>Guns</name>
+						<specialization>Gyroc</specialization>
+						<modifier>-4</modifier>
+					</default>
+					<default>
+						<type>Skill</type>
+						<name>Guns</name>
+						<specialization>Light Anti-Armor Weapon</specialization>
+						<modifier>-4</modifier>
+					</default>
+				</ranged_weapon>
+				<categories>
+					<category>Firearms</category>
+				</categories>
+			</equipment>
+			<equipment version="3" state="equipped">
+				<quantity>1</quantity>
+				<description>Silencer, Pistol or SMG</description>
+				<tech_level>6</tech_level>
+				<legality_class>4</legality_class>
+				<value>400</value>
+				<weight>1 lb</weight>
+				<reference>B289</reference>
+				<notes>-2 Hearing, -1 Acc, -1 Bulk, good for 13 shots; see Silencers (B412)</notes>
+				<categories>
+					<category>Weapon and Combat Accessories</category>
+				</categories>
+			</equipment>
+		</equipment_container>
 		<equipment version="3" state="equipped">
 			<quantity>1</quantity>
 			<description>Canteen</description>
@@ -1384,23 +1821,6 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 			<categories>
 				<category>General Equipment</category>
 			</categories>
-		</equipment>
-		<equipment version="3" state="equipped">
-			<quantity>1</quantity>
-			<description>Compass</description>
-			<tech_level>6</tech_level>
-			<legality_class>4</legality_class>
-			<value>50</value>
-			<weight>0.144 lb</weight>
-			<reference>B288</reference>
-			<categories>
-				<category>Camping and Survival Gear</category>
-			</categories>
-			<skill_bonus>
-				<name compare="starts with">navigation</name>
-				<specialization compare="is anything"></specialization>
-				<amount>1</amount>
-			</skill_bonus>
 		</equipment>
 		<equipment version="3" state="equipped">
 			<quantity>1</quantity>
@@ -1417,67 +1837,51 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 		</equipment>
 		<equipment version="3" state="equipped">
 			<quantity>1</quantity>
-			<description>Hatchet</description>
-			<tech_level>0</tech_level>
-			<legality_class>4</legality_class>
-			<value>40</value>
-			<weight>2 lb</weight>
-			<reference>B271</reference>
-			<melee_weapon>
-				<damage>sw cut</damage>
-				<strength>8</strength>
-				<usage>Swung</usage>
-				<reach>1</reach>
-				<parry>0</parry>
-				<block>No</block>
-				<default>
-					<type>DX</type>
-					<modifier>-5</modifier>
-				</default>
-				<default>
-					<type>Skill</type>
-					<name>Axe/Mace</name>
-					<modifier>0</modifier>
-				</default>
-				<default>
-					<type>Skill</type>
-					<name>Flail</name>
-					<modifier>-4</modifier>
-				</default>
-				<default>
-					<type>Skill</type>
-					<name>Two-Handed Axe/Mace</name>
-					<modifier>-3</modifier>
-				</default>
-			</melee_weapon>
-			<ranged_weapon>
-				<damage>sw cut</damage>
-				<strength>8</strength>
-				<usage>Thrown</usage>
-				<accuracy>1</accuracy>
-				<range>x1.5/x2.5</range>
-				<rate_of_fire>1</rate_of_fire>
-				<shots>T(1)</shots>
-				<bulk>-2</bulk>
-				<default>
-					<type>DX</type>
-					<modifier>-4</modifier>
-				</default>
-				<default>
-					<type>Skill</type>
-					<name>Thrown Weapon</name>
-					<specialization>Axe/Mace</specialization>
-					<modifier>0</modifier>
-				</default>
-			</ranged_weapon>
+			<description>Leather Gloves</description>
+			<tech_level>1</tech_level>
+			<legality_class>-</legality_class>
+			<value>30</value>
+			<reference>B284</reference>
 			<categories>
-				<category>Melee Weapon</category>
-				<category>Missile Weapon</category>
+				<category>Gloves</category>
 			</categories>
+			<dr_bonus>
+				<location>hands</location>
+				<amount>2</amount>
+			</dr_bonus>
 		</equipment>
 		<equipment version="3" state="equipped">
 			<quantity>1</quantity>
-			<description>Large Knife</description>
+			<description>Light Layered Brahmin Leather Armor</description>
+			<tech_level>1</tech_level>
+			<legality_class>4</legality_class>
+			<value>1000</value>
+			<weight>37.5 lb</weight>
+			<reference>B283</reference>
+			<notes>Flexible</notes>
+			<categories>
+				<category>Body Armor</category>
+			</categories>
+			<dr_bonus>
+				<location>torso</location>
+				<amount>3</amount>
+			</dr_bonus>
+			<dr_bonus>
+				<location>groin</location>
+				<amount>3</amount>
+			</dr_bonus>
+			<dr_bonus>
+				<location>arms</location>
+				<amount>3</amount>
+			</dr_bonus>
+			<dr_bonus>
+				<location>legs</location>
+				<amount>3</amount>
+			</dr_bonus>
+		</equipment>
+		<equipment version="3" state="equipped">
+			<quantity>1</quantity>
+			<description>Large Knife, Fine</description>
 			<tech_level>0</tech_level>
 			<legality_class>4</legality_class>
 			<value>40</value>
@@ -1521,7 +1925,7 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 				</default>
 			</melee_weapon>
 			<melee_weapon>
-				<damage>thr imp</damage>
+				<damage>thr+1 imp</damage>
 				<strength>6</strength>
 				<usage>Thrust</usage>
 				<reach>C</reach>
@@ -1584,50 +1988,6 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 		</equipment>
 		<equipment version="3" state="equipped">
 			<quantity>1</quantity>
-			<description>Leather Gloves</description>
-			<tech_level>1</tech_level>
-			<legality_class>-</legality_class>
-			<value>30</value>
-			<reference>B284</reference>
-			<categories>
-				<category>Gloves</category>
-			</categories>
-			<dr_bonus>
-				<location>hands</location>
-				<amount>2</amount>
-			</dr_bonus>
-		</equipment>
-		<equipment version="3" state="equipped">
-			<quantity>1</quantity>
-			<description>Light Layered Brahmin Leather Armor</description>
-			<tech_level>1</tech_level>
-			<legality_class>4</legality_class>
-			<value>1000</value>
-			<weight>37.5 lb</weight>
-			<reference>B283</reference>
-			<notes>Flexible</notes>
-			<categories>
-				<category>Body Armor</category>
-			</categories>
-			<dr_bonus>
-				<location>torso</location>
-				<amount>3</amount>
-			</dr_bonus>
-			<dr_bonus>
-				<location>groin</location>
-				<amount>3</amount>
-			</dr_bonus>
-			<dr_bonus>
-				<location>arms</location>
-				<amount>3</amount>
-			</dr_bonus>
-			<dr_bonus>
-				<location>legs</location>
-				<amount>3</amount>
-			</dr_bonus>
-		</equipment>
-		<equipment version="3" state="equipped">
-			<quantity>1</quantity>
 			<description>Pot-Helm</description>
 			<tech_level>3</tech_level>
 			<legality_class>4</legality_class>
@@ -1642,23 +2002,179 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 				<amount>4</amount>
 			</dr_bonus>
 		</equipment>
+		<equipment_container version="3" open="yes" state="equipped">
+			<description>Ammo</description>
+			<legality_class>4</legality_class>
+			<value>0</value>
+			<equipment version="3" state="equipped">
+				<quantity>76</quantity>
+				<description>9x19mm Parabellum</description>
+				<legality_class>4</legality_class>
+				<value>0.3</value>
+				<weight>0.026 lb</weight>
+				<reference>HT176</reference>
+				<categories>
+					<category>Ammunition and Warheads</category>
+				</categories>
+			</equipment>
+			<equipment version="3" state="equipped">
+				<quantity>21</quantity>
+				<description>12-gauge 2.75" (18.5x70mmR) Shot</description>
+				<legality_class>4</legality_class>
+				<value>0.5</value>
+				<weight>0.11 lb</weight>
+				<reference>HT176</reference>
+				<notes>Light cased. Shotshell.</notes>
+				<categories>
+					<category>Ammunition and Warheads</category>
+				</categories>
+			</equipment>
+			<equipment version="3" state="equipped">
+				<quantity>5</quantity>
+				<description>12-gauge 2.75" (18.5x70mmR) Slugs</description>
+				<legality_class>4</legality_class>
+				<value>0.5</value>
+				<weight>0.11 lb</weight>
+				<reference>HT176</reference>
+				<notes>Rifled slugs</notes>
+				<categories>
+					<category>Ammunition and Warheads</category>
+				</categories>
+			</equipment>
+		</equipment_container>
 		<equipment version="3" state="equipped">
 			<quantity>1</quantity>
-			<description>Pump Shotgun, 12G</description>
-			<tech_level>6</tech_level>
+			<description>Reinforced Boots</description>
+			<tech_level>7</tech_level>
+			<legality_class>-</legality_class>
+			<value>75</value>
+			<weight>3 lb</weight>
+			<reference>B284</reference>
+			<categories>
+				<category>Footwear</category>
+			</categories>
+			<dr_bonus>
+				<location>feet</location>
+				<amount>2</amount>
+			</dr_bonus>
+		</equipment>
+		<equipment_container version="3" open="yes" state="not carried">
+			<description>Backpack, Small</description>
+			<tech_level>1</tech_level>
 			<legality_class>4</legality_class>
-			<value>240</value>
-			<weight>8 lb</weight>
-			<reference>B279</reference>
+			<value>60</value>
+			<weight>3 lb</weight>
+			<reference>B288</reference>
+			<categories>
+				<category>Camping and Survival Gear</category>
+			</categories>
+			<prereq_list all="yes">
+				<contained_weight_prereq has="yes" compare="at most">40 lb</contained_weight_prereq>
+			</prereq_list>
+			<equipment version="3" state="not carried">
+				<quantity>1</quantity>
+				<description>Small Radio</description>
+				<tech_level>8</tech_level>
+				<legality_class>4</legality_class>
+				<value>250</value>
+				<weight>0.5 lb</weight>
+				<reference>HT38</reference>
+				<notes>5-mile range. 3xXS/10hrs.</notes>
+				<categories>
+					<category>General Equipment</category>
+				</categories>
+			</equipment>
+			<equipment version="3" state="not carried">
+				<quantity>1</quantity>
+				<description>Duct Tape</description>
+				<tech_level>6</tech_level>
+				<legality_class>4</legality_class>
+				<value>1</value>
+				<weight>2 lb</weight>
+				<reference>HT26</reference>
+				<notes>60 yards per roll.</notes>
+				<categories>
+					<category>General Equipment</category>
+				</categories>
+			</equipment>
+			<equipment version="3" state="not carried">
+				<quantity>1</quantity>
+				<description>Mirror</description>
+				<tech_level>5</tech_level>
+				<legality_class>4</legality_class>
+				<value>5</value>
+				<reference>HT31</reference>
+				<notes>Fragile.</notes>
+				<categories>
+					<category>General Equipment</category>
+				</categories>
+			</equipment>
+			<equipment version="3" state="not carried">
+				<quantity>1</quantity>
+				<description>Metal Detector Wand</description>
+				<tech_level>7</tech_level>
+				<legality_class>4</legality_class>
+				<value>50</value>
+				<weight>3 lb</weight>
+				<reference>B289</reference>
+				<notes>+3 to find metal items. 8 hrs.</notes>
+				<categories>
+					<category>Optics and Sensors</category>
+				</categories>
+			</equipment>
+			<equipment version="3" state="not carried">
+				<quantity>1</quantity>
+				<description>Binoculars</description>
+				<tech_level>6</tech_level>
+				<legality_class>4</legality_class>
+				<value>400</value>
+				<weight>2 lb</weight>
+				<reference>B289</reference>
+				<notes>Gives (TL-4) levels of Telescopic Vision.</notes>
+				<categories>
+					<category>Optics and Sensors</category>
+				</categories>
+			</equipment>
+			<equipment version="3" state="not carried">
+				<quantity>1</quantity>
+				<description>Compass</description>
+				<tech_level>6</tech_level>
+				<legality_class>4</legality_class>
+				<value>50</value>
+				<weight>0.144 lb</weight>
+				<reference>B288</reference>
+				<categories>
+					<category>Camping and Survival Gear</category>
+				</categories>
+				<skill_bonus>
+					<name compare="starts with">navigation</name>
+					<specialization compare="is anything"></specialization>
+					<amount>1</amount>
+				</skill_bonus>
+			</equipment>
+		</equipment_container>
+		<equipment version="3" state="equipped">
+			<quantity>1</quantity>
+			<description>Ithaca Model 37 Featherlight, Close Shot</description>
+			<tech_level>6</tech_level>
+			<legality_class>3</legality_class>
+			<value>0</value>
+			<reference>HT104</reference>
 			<ranged_weapon>
-				<damage>1d+1 pi</damage>
+				<damage>5d pi</damage>
 				<strength>10&#8224;</strength>
 				<accuracy>3</accuracy>
-				<range>50/125</range>
-				<rate_of_fire>2x9</rate_of_fire>
-				<shots>5(3i)</shots>
-				<bulk>-5</bulk>
+				<range>3</range>
+				<rate_of_fire>2</rate_of_fire>
+				<shots>4+1(2i)</shots>
+				<bulk>-6</bulk>
 				<recoil>1</recoil>
+				<default>
+					<type>Skill</type>
+					<name>Guns</name>
+					<specialization>Shotgun</specialization>
+					<modifier>0</modifier>
+				</default>
 				<default>
 					<type>DX</type>
 					<modifier>-4</modifier>
@@ -1678,8 +2194,14 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 				<default>
 					<type>Skill</type>
 					<name>Guns</name>
+					<specialization>Musket</specialization>
+					<modifier>-2</modifier>
+				</default>
+				<default>
+					<type>Skill</type>
+					<name>Guns</name>
 					<specialization>Shotgun</specialization>
-					<modifier>0</modifier>
+					<modifier>-2</modifier>
 				</default>
 				<default>
 					<type>Skill</type>
@@ -1695,9 +2217,8 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 				</default>
 				<default>
 					<type>Skill</type>
-					<name>Guns</name>
-					<specialization>Musket</specialization>
-					<modifier>-2</modifier>
+					<name>Gun!</name>
+					<modifier>0</modifier>
 				</default>
 				<default>
 					<type>Skill</type>
@@ -1717,314 +2238,104 @@ Full load for shotgun: $14 for 5 shells, .7 lb (load individually)
 					<specialization>Light Anti-Armor Weapon</specialization>
 					<modifier>-4</modifier>
 				</default>
+			</ranged_weapon>
+			<notes>&lt; 3 yds; 4xDR for target</notes>
+			<categories>
+				<category>Firearms</category>
+			</categories>
+		</equipment>
+		<equipment version="3" state="equipped">
+			<quantity>1</quantity>
+			<description>Ithaca Model 37 Featherlight, Slugs</description>
+			<tech_level>6</tech_level>
+			<legality_class>3</legality_class>
+			<value>0</value>
+			<reference>HT166</reference>
+			<ranged_weapon>
+				<damage>5d pi+</damage>
+				<strength>10&#8224;</strength>
+				<accuracy>4</accuracy>
+				<range>100/1200</range>
+				<rate_of_fire>2</rate_of_fire>
+				<shots>4+1(2i)</shots>
+				<bulk>-6</bulk>
+				<recoil>5</recoil>
+				<default>
+					<type>Skill</type>
+					<name>Guns</name>
+					<specialization>Shotgun</specialization>
+					<modifier>0</modifier>
+				</default>
+				<default>
+					<type>DX</type>
+					<modifier>-4</modifier>
+				</default>
+				<default>
+					<type>Skill</type>
+					<name>Guns</name>
+					<specialization>Pistol</specialization>
+					<modifier>-2</modifier>
+				</default>
+				<default>
+					<type>Skill</type>
+					<name>Guns</name>
+					<specialization>Rifle</specialization>
+					<modifier>-2</modifier>
+				</default>
+				<default>
+					<type>Skill</type>
+					<name>Guns</name>
+					<specialization>Musket</specialization>
+					<modifier>-2</modifier>
+				</default>
+				<default>
+					<type>Skill</type>
+					<name>Guns</name>
+					<specialization>Shotgun</specialization>
+					<modifier>-2</modifier>
+				</default>
+				<default>
+					<type>Skill</type>
+					<name>Guns</name>
+					<specialization>Light Machine Gun</specialization>
+					<modifier>-2</modifier>
+				</default>
+				<default>
+					<type>Skill</type>
+					<name>Guns</name>
+					<specialization>Submachine Gun</specialization>
+					<modifier>-2</modifier>
+				</default>
 				<default>
 					<type>Skill</type>
 					<name>Gun!</name>
 					<modifier>0</modifier>
 				</default>
+				<default>
+					<type>Skill</type>
+					<name>Guns</name>
+					<specialization>Grenade Launcher</specialization>
+					<modifier>-4</modifier>
+				</default>
+				<default>
+					<type>Skill</type>
+					<name>Guns</name>
+					<specialization>Gyroc</specialization>
+					<modifier>-4</modifier>
+				</default>
+				<default>
+					<type>Skill</type>
+					<name>Guns</name>
+					<specialization>Light Anti-Armor Weapon</specialization>
+					<modifier>-4</modifier>
+				</default>
 			</ranged_weapon>
 			<categories>
-				<category>Missile Weapon</category>
+				<category>Firearms</category>
 			</categories>
 		</equipment>
-		<equipment version="3" state="equipped">
-			<quantity>1</quantity>
-			<description>Reinforced Boots</description>
-			<tech_level>7</tech_level>
-			<legality_class>-</legality_class>
-			<value>75</value>
-			<weight>3 lb</weight>
-			<reference>B284</reference>
-			<categories>
-				<category>Footwear</category>
-			</categories>
-			<dr_bonus>
-				<location>feet</location>
-				<amount>2</amount>
-			</dr_bonus>
-		</equipment>
-		<equipment version="3" state="equipped">
-			<quantity>1</quantity>
-			<description>Sledgehammer</description>
-			<tech_level>0</tech_level>
-			<legality_class>4</legality_class>
-			<value>80</value>
-			<weight>12 lb</weight>
-			<reference>B274</reference>
-			<melee_weapon>
-				<damage>sw+4 cr</damage>
-				<strength>13&#8225;</strength>
-				<usage>Swung</usage>
-				<reach>1,2*</reach>
-				<parry>0U</parry>
-				<block>No</block>
-				<default>
-					<type>DX</type>
-					<modifier>-5</modifier>
-				</default>
-				<default>
-					<type>Skill</type>
-					<name>Two-Handed Axe/Mace</name>
-					<modifier>0</modifier>
-				</default>
-				<default>
-					<type>Skill</type>
-					<name>Axe/Mace</name>
-					<modifier>-3</modifier>
-				</default>
-				<default>
-					<type>Skill</type>
-					<name>Polearm</name>
-					<modifier>-4</modifier>
-				</default>
-				<default>
-					<type>Skill</type>
-					<name>Two-Handed Flail</name>
-					<modifier>-4</modifier>
-				</default>
-			</melee_weapon>
-			<notes>Unready after attack; can't do both in the same turn</notes>
-			<categories>
-				<category>Melee Weapon</category>
-			</categories>
-		</equipment>
-		<equipment_container version="3" open="yes" state="not carried">
-			<description>Wagon</description>
-			<tech_level>3</tech_level>
-			<legality_class>4</legality_class>
-			<value>680</value>
-			<reference>B464</reference>
-			<categories>
-				<category>Vehicle</category>
-			</categories>
-			<prereq_list all="yes">
-				<contained_weight_prereq has="yes" compare="at most">1000 lb</contained_weight_prereq>
-			</prereq_list>
-			<equipment_container version="3" open="yes" state="not carried">
-				<description>55-Gallon Drum</description>
-				<tech_level>6</tech_level>
-				<legality_class>4</legality_class>
-				<value>50</value>
-				<weight>55 lb</weight>
-				<reference>HT54</reference>
-				<notes>DR 3.</notes>
-				<categories>
-					<category>General Equipment</category>
-				</categories>
-			</equipment_container>
-			<equipment_container version="3" open="yes" state="not carried">
-				<description>Backpack, Frame</description>
-				<tech_level>1</tech_level>
-				<legality_class>4</legality_class>
-				<value>100</value>
-				<weight>10 lb</weight>
-				<reference>B288</reference>
-				<categories>
-					<category>Camping and Survival Gear</category>
-				</categories>
-				<prereq_list all="yes">
-					<contained_weight_prereq has="yes" compare="at most">100 lb</contained_weight_prereq>
-				</prereq_list>
-				<equipment version="3" state="not carried">
-					<quantity>1</quantity>
-					<description>Duct Tape</description>
-					<tech_level>6</tech_level>
-					<legality_class>4</legality_class>
-					<value>1</value>
-					<weight>2 lb</weight>
-					<reference>HT26</reference>
-					<notes>60 yards per roll.</notes>
-					<categories>
-						<category>General Equipment</category>
-					</categories>
-				</equipment>
-				<equipment_container version="3" open="yes" state="not carried">
-					<description>First Aid Kit</description>
-					<tech_level>7</tech_level>
-					<legality_class>4</legality_class>
-					<value>50</value>
-					<weight>2 lb</weight>
-					<reference>HT221</reference>
-					<categories>
-						<category>Emergency Equipment</category>
-					</categories>
-					<skill_bonus>
-						<name compare="is">First Aid</name>
-						<specialization compare="is anything"></specialization>
-						<amount>1</amount>
-					</skill_bonus>
-				</equipment_container>
-				<equipment version="3" state="not carried">
-					<quantity>1</quantity>
-					<description>Rope, 3/4", 20 yards</description>
-					<tech_level>1</tech_level>
-					<legality_class>4</legality_class>
-					<value>50</value>
-					<weight>10 lb</weight>
-					<reference>B288</reference>
-					<notes>Supports 1,100 lbs.</notes>
-					<categories>
-						<category>Camping and Survival Gear</category>
-					</categories>
-				</equipment>
-			</equipment_container>
-			<equipment version="3" state="not carried">
-				<quantity>1</quantity>
-				<description>Biohazard Suit</description>
-				<tech_level>7</tech_level>
-				<legality_class>4</legality_class>
-				<value>500</value>
-				<weight>8 lb</weight>
-				<reference>HT75</reference>
-				<notes>Flexible.</notes>
-				<categories>
-					<category>Defenses</category>
-				</categories>
-				<dr_bonus>
-					<location>neck</location>
-					<amount>1</amount>
-				</dr_bonus>
-				<dr_bonus>
-					<location>torso</location>
-					<amount>1</amount>
-				</dr_bonus>
-				<dr_bonus>
-					<location>groin</location>
-					<amount>1</amount>
-				</dr_bonus>
-				<dr_bonus>
-					<location>arms</location>
-					<amount>1</amount>
-				</dr_bonus>
-				<dr_bonus>
-					<location>hands</location>
-					<amount>1</amount>
-				</dr_bonus>
-				<dr_bonus>
-					<location>legs</location>
-					<amount>1</amount>
-				</dr_bonus>
-				<dr_bonus>
-					<location>feet</location>
-					<amount>1</amount>
-				</dr_bonus>
-			</equipment>
-			<equipment version="3" state="not carried">
-				<quantity>1</quantity>
-				<description>Climbing Gear</description>
-				<tech_level>2</tech_level>
-				<legality_class>4</legality_class>
-				<value>20</value>
-				<weight>4 lb</weight>
-				<reference>B288</reference>
-				<notes>Hammer, spikes, carabiners</notes>
-				<categories>
-					<category>Camping and Survival Gear</category>
-				</categories>
-			</equipment>
-			<equipment version="3" state="not carried">
-				<quantity>1</quantity>
-				<description>Life Jacket</description>
-				<tech_level>6</tech_level>
-				<legality_class>4</legality_class>
-				<value>100</value>
-				<weight>6 lb</weight>
-				<reference>B288</reference>
-				<notes>Floats up to 350 lbs.</notes>
-				<categories>
-					<category>Camping and Survival Gear</category>
-				</categories>
-			</equipment>
-			<equipment version="3" state="not carried">
-				<quantity>1</quantity>
-				<description>Metal Detector Wand</description>
-				<tech_level>7</tech_level>
-				<legality_class>4</legality_class>
-				<value>50</value>
-				<weight>3 lb</weight>
-				<reference>B289</reference>
-				<notes>+3 to find metal items. 8 hrs.</notes>
-				<categories>
-					<category>Optics and Sensors</category>
-				</categories>
-			</equipment>
-			<equipment version="3" state="not carried">
-				<quantity>1</quantity>
-				<description>Mirror</description>
-				<tech_level>5</tech_level>
-				<legality_class>4</legality_class>
-				<value>5</value>
-				<reference>HT31</reference>
-				<notes>Fragile.</notes>
-				<categories>
-					<category>General Equipment</category>
-				</categories>
-			</equipment>
-			<equipment version="3" state="not carried">
-				<quantity>2</quantity>
-				<description>Mules: Sal and Trudge</description>
-				<tech_level>6</tech_level>
-				<legality_class>4</legality_class>
-				<value>2000</value>
-				<reference>B460</reference>
-				<categories>
-					<category>Animal</category>
-				</categories>
-			</equipment>
-			<equipment version="3" state="not carried">
-				<quantity>1</quantity>
-				<description>Personal Basics</description>
-				<tech_level>0</tech_level>
-				<legality_class>4</legality_class>
-				<value>5</value>
-				<weight>1 lb</weight>
-				<reference>B288</reference>
-				<notes>Minimum gear for camping: -2 to any Survival roll without it. Includes utensils, tinderbox or flint and steel, towel, etc., as TL permits.</notes>
-				<categories>
-					<category>Camping and Survival Gear</category>
-				</categories>
-			</equipment>
-			<equipment version="3" state="not carried">
-				<quantity>1</quantity>
-				<description>Shovel</description>
-				<tech_level>1</tech_level>
-				<legality_class>4</legality_class>
-				<value>12</value>
-				<weight>6 lb</weight>
-				<reference>B289</reference>
-				<notes>Speeds up digging</notes>
-				<categories>
-					<category>Tools</category>
-				</categories>
-			</equipment>
-			<equipment version="3" state="not carried">
-				<quantity>1</quantity>
-				<description>Small Radio</description>
-				<tech_level>8</tech_level>
-				<legality_class>4</legality_class>
-				<value>250</value>
-				<weight>0.5 lb</weight>
-				<reference>HT38</reference>
-				<notes>5-mile range. 3xXS/10hrs.</notes>
-				<categories>
-					<category>General Equipment</category>
-				</categories>
-			</equipment>
-			<equipment_container version="3" open="yes" state="not carried">
-				<description>Wooden Barrel, Small</description>
-				<tech_level>5</tech_level>
-				<legality_class>4</legality_class>
-				<value>65</value>
-				<weight>20 lb</weight>
-				<reference>HT53</reference>
-				<notes>Holds 5gal. DR 1.</notes>
-				<categories>
-					<category>General Equipment</category>
-				</categories>
-			</equipment_container>
-		</equipment_container>
 	</equipment_list>
-	<print_settings units="in">
+	<print_settings printer="Brother HL-2270DW series" units="in">
 		<orientation>portrait</orientation>
 		<width>8.5</width>
 		<height>11</height>
